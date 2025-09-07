@@ -169,38 +169,3 @@ body{
 .fw-black{ font-weight:900; }
 .text-muted{ color:var(--muted) !important; }
 .opacity-75{ opacity:.75; }
-
-.logo-img{
-  width:36px;                 /* tamaño del logo */
-  height:36px;
-  border-radius:10px;         /* esquinas redondeadas como en tu captura */
-  display:block;              /* evita desalineación por línea base */
-  object-fit:cover;
-  box-shadow:
-    0 0 0 2px rgba(255,255,255,.06),
-    0 10px 24px rgba(124,92,255,.35); /* glow suave */
-}
-
-.brand-title{
-  font-weight:700;
-  letter-spacing:.2px;
-  color:#e9ecf5;              /* tono claro del header */
-}
-
-.hero-card{
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 25px 70px rgba(0,0,0,.55);
-}
-.hero-img{
-  width:100%;
-  display:block;
-  border-radius:22px;
-}
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  border-radius:10px;
-  pointer-events:none;
-  background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,.45) 100%);
-}
