@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RE:collection — Contacto</title>
+
+  <!-- Agrego Bootstrap desde un CDN (de un repositorio online) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Linkeo mi css con los estilos propios definidos por mi-->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">   <!-- Agrego al body para que ocupe todo el alto de la pagina y que funcione el footer abajo-->
+
+    <!-- Menu de inicio de arriba-->
+  <header class="app-header border-bottom">
+  <div class="container d-flex align-items-center justify-content-between app-nav flex-wrap">
+    <div class="brand d-flex align-items-center gap-2 fw-black mb-2 mb-md-0">
+      <img src="assets/img/logoREcollection.png" alt="Logo RE:collection" class="logo-img me-2" width="36" height="36" />
+      <span>RE:collection</span>
+    </div>
+    <nav class="menu d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+        <a href="inicio.html" class="tab">Inicio</a>
+        <a href="perfil.html" class="tab">Perfil</a>
+        <a href="laminas.html" class="tab">Laminas</a>
+        <a href="albumes.html" class="tab">Albumes</a>
+        <a href="contacto.html" class="tab active">Contáctanos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="flex-grow-1">  <!-- Hace que lo de main ocupe todo el espacio de la pagina-->
+
+  <!--Formulario de contacto-->
+<div class="container mt-5">
+<div class="fondo-contacto p-4 rounded shadow">  <!--Envuelvo todo en un div para darle fondo-->
+<div class="overlay-transparente">
+
+ <div class="row justify-content-center align-items-center">
+ <!--Primera columna (imagen)-->
+  <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+    <img src="assets/img/mono1.png" alt="Contacto" class="img-fluid rounded" style="max-height: 400px;">
+  </div>
+
+    <!--Segunda columna (formulario)-->
+  <div class="col-12 col-md-6 mb-3 mb-md-0">
+    <form id="formContacto" action="#" method="get" class="p-3 border rounded shadow form-fondo">
+      <h1 class="text-center mb-4">Contacto</h1>
+      <label class="form-label" for="correo">Correo:</label>
+      <input id="correo" name="correo" type="email" class="form-control mb-3" required placeholder="Ingresa tu correo" autocomplete="email"> <!-- Agrego validaciones -->
+      <label class="form-label" for="asunto">Asunto:</label>
+      <input id="asunto" name="asunto" type="text" class="form-control mb-3" required placeholder="Ingresa el asunto"><!-- Agrego validaciones -->
+      <div  class="mb-3">
+        <label class="form-label" for="mensaje">Mensaje (500 carácteres max.):</label>
+        <textarea id="mensaje" name="mensaje" rows="4" class="form-control" maxlength="500" required placeholder="Escribe tu mensaje aquí"></textarea> <!-- Agrego validaciones -->
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+ <!--Tercera columna (imagen)-->
+  <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+    <img src="assets/img/mono3.png" alt="Contacto" class="img-fluid rounded" style="max-height: 400px;">
+  </div>
+
+ </div><!--Cierre del row (las columnas deben estar dentro del row)-->
+
+</div> 
+</div>
+</div>
+
+</main><!-- Envuelvo todo en un main para poder hacer que el footer este en el pie -->
+
+    <!-- Footer -->
+    <footer class="border-top py-3 bg-dark text-white mt-auto">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <span>© 2025 RE:collection — Todos los derechos reservados</span>
+        <div class="d-flex gap-3">
+          <a href="inicio.html" class="text-white text-decoration-none">Inicio</a>
+          <a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+          <a href="perfil.html" class="text-white text-decoration-none">Perfil</a>
+        </div>
+      </div>
+    </footer>
+
+     <script src="script.js"></script>
+</body>
+
+
+
+
+</html>

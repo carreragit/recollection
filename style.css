@@ -13,6 +13,35 @@ body{
   background: radial-gradient(1200px 800px at 80% -10%, #1e2a60 0%, var(--bg) 60%);
 }
 
+
+
+/* Imagen de fondo para contacto*/
+.fondo-contacto {
+  background: rgba(0, 0, 0, 0.89); /* color oscuro con transparencia */
+  background-image: url('assets/img/fondo11.png'); /* tu imagen espacial */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px); /* difumina ligeramente lo que está detrás */
+  border-radius: 1rem; /* bordes redondeados */
+}
+
+
+
+
+/* fondo leve para contacto */
+.form-fondo {
+  background-color: rgba(25, 25, 27, 0.144); /* negro 60% transparente */
+  color: white; /* para contraste */
+} 
+
+/* fondo leve para contacto */
+.overlay-transparente {
+  background-color: rgba(6, 5, 48, 0.589); 
+  color: white; 
+} 
+
+
+
 /* Header / Navbar (mantiene estilo “glass”) */
 .app-header{
   position: sticky; top:0; z-index:50;
