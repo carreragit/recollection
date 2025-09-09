@@ -14,67 +14,95 @@
   />
 
   <!-- Estilos propios -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
   <!-- Menu de inicio de arriba-->
   <header class="app-header border-bottom">
-    <main class="flex-grow-1">  <!-- Hace que lo de main ocupe todo el espacio de la pagina-->
-  <div class="container d-flex align-items-center justify-content-between app-nav">
-    <div class="brand d-flex align-items-center gap-2 fw-black">
-      <img src="assets/img/logoREcollection.png" alt="Logo RE:collection" class="logo-img me-2" width="36" height="36" />
-      <span>RE:collection</span>
-    </div>
-    <nav class="menu d-flex flex-wrap gap-2">
+    <div class="container d-flex align-items-center justify-content-between app-nav flex-wrap">
+      <div class="brand d-flex align-items-center gap-2 fw-black mb-2 mb-md-0">
+        <img src="assets/img/logoREcollection.png" alt="Logo RE:collection" class="logo-img me-2" width="36" height="36" />
+        <span>RE:collection</span>
+      </div>
+      <!--barra de navegacion-->
+      <nav class="menu d-flex flex-wrap gap-2">
         <a href="inicio.html" class="tab">Inicio</a>
         <a href="perfil.html" class="tab active">Perfil</a>
         <a href="laminas.html" class="tab">Laminas</a>
-        <a href="albumes.html" class="tab">Albumes</a>
-        <a href="contacto.html" class="tab">Contactanos</a>
-    </nav>
-  </div>
-</header>
+        <a href="inicio.html.#albumes" class="tab">Albumes</a>
+        <a href="login.html" class="tab">Inicio sesión</a>
+        <a href="contacto.html" class="tab">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
   <!-- Perfil -->
   <main class="container my-5">
-    <div class="panel p-4">
+    <div class="panel p-4 hero-frame">
       
       <!-- Foto, nombre y descripcion -->
       <div class="d-flex align-items-center gap-4 mb-4">
-        <img src="assets/img/kiki.png" alt="Foto de perfil" class="avatar">
+        <img src="assets/img/kikipro.jpg" alt="Foto de perfil" class="avatar">
         <div>
           <h2 class="mb-1">Kikita</h2>
-          <p class="text-muted">Soy una coleccionista apasionada por los álbumes digitales y el mundo de harry potter.</p>
+          <p class="text-muted">Soy una coleccionista apasionada por los álbumes digitales y el mundo de KANNDY SILKSONG!</p>
         </div>
       </div>
 
       <!-- Laminas favoritas -->
-      <section class="mb-4">
-        <h4 class="mb-3">Mis láminas en exhibición</h4>
-        <div class="d-flex flex-wrap gap-3">
-          <div class="slot filled">Lámina 1</div>
-          <div class="slot filled">Lámina 2</div>
-          <div class="slot filled">Lámina 3</div>
-          <div class="slot filled">Lámina 4</div>
-          <div class="slot filled">Lámina 5</div>
-        </div>
-      </section>
+<section class="mb-4">
+  <h4 class="mb-3">Mis láminas en exhibición</h4>
+  
+  <!-- Contenedor tipo fila para ordenar las imágenes -->
+  <div class="row g-3">
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="assets/img/lamina1.png" alt="Lámina 1" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="assets/img/lamina2.png" alt="Lámina 2" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="assets/img/lamina3.png" alt="Lámina 3" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="assets/img/lamina4.png" alt="Lámina 4" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="assets/img/lamina5.png" alt="Lámina 5" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="assets/img/lamina6.png" alt="Lámina 6" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
 
       <!-- Categorias favoritas -->
-      <section>
-        <h4 class="mb-3">Categorías favoritas</h4>
-        <div class="d-flex flex-wrap gap-2">
-          <span class="badge-pill">Harry Potter</span>
-          <span class="badge-pill">Juego de Tronos</span>
-          <span class="badge-pill">Final Fantasy XIV</span>
-          <span class="badge-pill">Bluey</span>
-        </div>
-      </section>
+<section>
+  <h4 class="mb-3">Categorías favoritas</h4>
+  <div class="d-flex flex-wrap gap-2">
+    <span class="badge etiqueta-categoria">Kanndy SILKSONG</span>
+    <span class="badge etiqueta-categoria">RE BORN: A New world</span>
+    <span class="badge etiqueta-categoria">Final Fantasy XIV</span>
+    <span class="badge etiqueta-categoria">Bluey</span>
+  </div>
+</section>
 
+</main>
+
+  <!-- Footer -->
+  <footer class="border-top py-3 bg-dark text-white mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <span>© 2025 RE:collection — Todos los derechos reservados</span>
+      <div class="d-flex gap-3">
+        <a href="inicio.html" class="text-white text-decoration-none">Inicio</a>
+        <a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+        <a href="perfil.html" class="text-white text-decoration-none">Perfil</a>
+      </div>
     </div>
-  </main>
+  </footer>
 
   <script src="scrip.js"></script>
 </body>
-</html>
+</html> 

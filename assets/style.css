@@ -352,3 +352,8 @@ body{
   .album-thumb{ min-height: 140px; padding: 18px; }
 }
 
+/*colores estiqueta de categorias */
+.etiqueta-categoria{
+  background: linear-gradient(135deg, #a0d8ff, #c4a3ff);
+  color: rgb(0, 0, 0);
+}
