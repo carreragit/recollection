@@ -243,15 +243,6 @@ body{
   background: linear-gradient(180deg, rgba(148,84,255,.22), rgba(0,224,184,.08));
   box-shadow: 0 24px 52px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.04);
 }
-.hero-frame::after{
-  content:""; position:absolute; left:0; right:0; bottom:0; height:140px;
-  background:
-    radial-gradient(60% 100% at 50% 15%, rgba(40,90,255,.8), transparent 72%),
-    radial-gradient(6px 6px at 6px 6px, rgba(0,0,0,.55) 42%, transparent 43%) 0 0/12px 12px;
-  opacity:.35; pointer-events:none;
-}
-
-
 
 /* llenar SOLO el rectángulo central */
 .hero-frame{
