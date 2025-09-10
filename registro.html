@@ -44,16 +44,20 @@
     <img src="assets/img/mono4.png" alt="Contacto" class="img-fluid rounded" style="max-height: 400px;">
   </div>
   <div class="col-md-6">
-    <form id="formRegistro" action="#" method="get" class="p-3 border rounded shadow form-fondo">
+    <form id="formRegistro" action="#" method="get" class="p-3 border rounded shadow form-fondo needs-validation" novalidate>
       <h1 class="text-center mb-4">Registro de usuarios</h1>
       <label class="form-label" for="usuarionombre">Nombre de usuario:</label>
-      <input id="usuarionombre" name="usuarionombre" type="text" class="form-control mb-3" required placeholder="Ingresa el nombre de usuario"><!-- Agrego validaciones -->
+      <input id="usuarionombre" name="usuarionombre" type="text" class="form-control mb-3" required placeholder="Ingresa el nombre de usuario" minlength="3" maxlength="15"><!-- Agrego validaciones -->
+      <div class="invalid-feedback">El nombre de usuario debe tener entre 3 y 15 caracteres.</div>
       <label class="form-label" for="correo">Correo:</label>
       <input id="correo" name="correo" type="email" class="form-control mb-3" required placeholder="Ingresa tu correo" autocomplete="email"> <!-- Agrego validaciones -->
+      <div class="invalid-feedback">Por favor ingresa un correo válido con @ y .</div>
       <label class="form-label" for="contrasena">Contraseña:</label>
       <input id="contrasena" name="contrasena" type="password" class="form-control mb-3" required placeholder="Ingresa una contraseña" autocomplete="current-password"><!-- Agrego validaciones -->
+      <div class="invalid-feedback" id="passwordFeedback">La contraseña debe tener al menos 8 caracteres, incluir mayúscula, minúscula, número y un carácter especial.</div>
       <label class="form-label" for="confirmarContrasena">Confirmar contraseña:</label>
       <input id="confirmarContrasena" name="confirmarContrasena" type="password" class="form-control mb-3" required placeholder="Repite tu contraseña" autocomplete="new-password"><!-- Agrego validaciones -->
+      <div class="invalid-feedback" id="passwordFeedback">Las contraseñas deben coincidir.</div>
       <button type="submit" class="btn btn-primary">Crear cuenta</button>
     </form>
   </div>

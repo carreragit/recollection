@@ -40,12 +40,13 @@
 <div class="container mt-5">
  <div class="row justify-content-center align-items-center">
   <div class="col-md-6">
-    <form id="formLogin" action="#" method="get" class="p-3 border rounded shadow form-fondo">
+    <form id="formLogin" action="#" method="get" class="p-3 border rounded shadow form-fondo needs-validation" novalidate>
       <h1 class="text-center mb-4">Ingreso de usuarios</h1>
       <label class="form-label" for="usuarionombre">Nombre de usuario:</label>
       <input id="usuarionombre" name="usuarionombre" type="text" class="form-control mb-3" required placeholder="Ingresa el nombre de usuario"><!-- Agrego validaciones -->
       <label class="form-label" for="correo">Correo:</label>
       <input id="correo" name="correo" type="email" class="form-control mb-3" required placeholder="Ingresa tu correo" autocomplete="email"> <!-- Agrego validaciones -->
+      <div class="invalid-feedback">Por favor ingresa un correo válido con @ y .</div>
       <label class="form-label" for="contrasena">Contraseña:</label>
       <input id="contrasena" name="contrasena" type="password" class="form-control mb-3" required placeholder="Ingresa una contraseña" autocomplete="current-password"><!-- Agrego validaciones -->
       <button type="submit" class="btn btn-primary">Ingresar</button>

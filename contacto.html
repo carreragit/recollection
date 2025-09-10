@@ -49,15 +49,17 @@
 
     <!--Segunda columna (formulario)-->
   <div class="col-12 col-md-6 mb-3 mb-md-0">
-    <form id="formContacto" action="#" method="get" class="p-3 border rounded shadow form-fondo">
+    <form id="formContacto" action="#" method="get" class="p-3 border rounded shadow form-fondo needs-validation" novalidate>
       <h1 class="text-center mb-4">Contacto</h1>
       <label class="form-label" for="correo">Correo:</label>
       <input id="correo" name="correo" type="email" class="form-control mb-3" required placeholder="Ingresa tu correo" autocomplete="email"> <!-- Agrego validaciones -->
       <label class="form-label" for="asunto">Asunto:</label>
-      <input id="asunto" name="asunto" type="text" class="form-control mb-3" required placeholder="Ingresa el asunto"><!-- Agrego validaciones -->
+      <input id="asunto" name="asunto" type="text" class="form-control mb-3" required placeholder="Ingresa el asunto" minlength="1" maxlength="30"><!-- Agrego validaciones -->
+      <div class="invalid-feedback">El asunto debe tener entre 1 carácter y 30 carácteres.</div>
       <div  class="mb-3">
         <label class="form-label" for="mensaje">Mensaje (500 carácteres max.):</label>
         <textarea id="mensaje" name="mensaje" rows="4" class="form-control" maxlength="500" required placeholder="Escribe tu mensaje aquí"></textarea> <!-- Agrego validaciones -->
+        <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
       </div>
       <button type="submit" class="btn btn-success">Enviar</button>
     </form>
